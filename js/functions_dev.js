@@ -147,8 +147,9 @@ function clearAll() {
 
 function showImage() {
 	$('#mainDiv').fadeIn(1000, function(){
+		$('#mainDiv').css('width', 'fit-content');
 		$('#mainDiv').css('background-image', "url('./img/lhd.jpg')");
 		$('#mainDiv').css('background-repeat', "no-repeat");
-		$('#mainDiv').css('background-size', "auto");
+		$('#mainDiv').css('background-size', "contain");
 	});
 }
