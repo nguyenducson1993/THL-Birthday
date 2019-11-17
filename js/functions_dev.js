@@ -118,6 +118,8 @@ function timeElapse(date){
 function showMessages() {
 	adjustWordsPosition();
 	$('#messages').fadeIn(5000, function() {
+		var x = document.getElementById("audioabc"); 
+		x.play();
 		showLoveU();
 	});
 }
@@ -133,7 +135,7 @@ function adjustCodePosition() {
 }
 
 function showLoveU() {
-	$('#loveu').fadeIn(3000, function(){
+	$('#loveu').fadeIn(30000, function(){
 		clearAll();
 	});
 }
