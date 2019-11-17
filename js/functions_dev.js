@@ -116,8 +116,8 @@ function timeElapse(date){
 }
 
 function showMessages() {
-	var x = document.getElementById("audioabc"); 
-	x.play();
+	//var x = document.getElementById("audioabc"); 
+	//x.play();
 	adjustWordsPosition();
 	$('#messages').fadeIn(15000, function() {
 		showLoveU();
