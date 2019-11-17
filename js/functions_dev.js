@@ -119,7 +119,7 @@ function showMessages() {
 	var x = document.getElementById("audioabc"); 
 	x.play();
 	adjustWordsPosition();
-	$('#messages').fadeIn(5000, function() {
+	$('#messages').fadeIn(15000, function() {
 		showLoveU();
 	});
 }
@@ -141,14 +141,14 @@ function showLoveU() {
 }
 
 function clearAll() {
-	$('#mainDiv').fadeIn(1000, function(){
+	$('#mainDiv').fadeIn(2000, function(){
 		$('#content').empty();
 		showImage();
 	});
 }
 
 function showImage() {
-	$('#mainDiv').fadeIn(1000, function(){
+	$('#mainDiv').fadeIn(3000, function(){
 		$('#mainDiv').css('width', 'fit-content');
 		$('#mainDiv').css('background-image', "url('./img/lhd.jpg')");
 		$('#mainDiv').css('background-repeat', "no-repeat");
