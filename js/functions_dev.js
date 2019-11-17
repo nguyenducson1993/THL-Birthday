@@ -116,10 +116,10 @@ function timeElapse(date){
 }
 
 function showMessages() {
+	var x = document.getElementById("audioabc"); 
+	x.play();
 	adjustWordsPosition();
 	$('#messages').fadeIn(5000, function() {
-		var x = document.getElementById("audioabc"); 
-		x.play();
 		showLoveU();
 	});
 }
