@@ -119,7 +119,7 @@ function showMessages() {
 	//var x = document.getElementById("audioabc"); 
 	//x.play();
 	adjustWordsPosition();
-	$('#messages').fadeIn(15000, function() {
+	$('#messages').fadeIn(20000, function() {
 		showLoveU();
 	});
 }
