@@ -133,5 +133,22 @@ function adjustCodePosition() {
 }
 
 function showLoveU() {
-	$('#loveu').fadeIn(3000);
+	$('#loveu').fadeIn(3000, function(){
+		clearAll();
+	});
+}
+
+function clearAll() {
+	$('#mainDiv').fadeIn(1000, function(){
+		$('#content').empty();
+		showImage();
+	});
+}
+
+function showImage() {
+	$('#mainDiv').fadeIn(1000, function(){
+		$('#mainDiv').css('background-image', "url('./img/lhd.jpg')");
+		$('#mainDiv').css('background-repeat', "no-repeat");
+		$('#mainDiv').css('background-size', "auto");
+	});
 }
